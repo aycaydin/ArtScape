@@ -13,7 +13,7 @@ ArtScape is a virtual art gallery that invites you to explore a vast collection 
 
 ## About Us
 
-ArtScape is maintained by a passionate team of art enthusiasts. Learn more about us [here] (ArtScape/aboutUs.html).
+ArtScape is maintained by a passionate team of art enthusiasts.
 
 ## Acknowledgments
 
