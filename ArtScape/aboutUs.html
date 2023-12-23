@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="icon" type="Image/x-icon" href="../ArtScape/img/favicon.ico">
+  <title>ArtScape</title>
+  <style>
+    body {
+      background-color: #D4C2AD;
+      color: white;
+      font-family: 'Arial', sans-serif;
+    }
+
+    h1,h2,h3,h4,h5,h6 {
+      color: #8C644D;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      font-size: 2.5rem;
+    }
+
+    p {
+      color: #FFF8F3;
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+
+    footer {
+      background-color: #66796B;
+      color: white;
+      text-align: center;
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: 100px;
+      padding-top: 40px;
+      padding-bottom: 30px;
+    }
+
+    .person-info {
+      margin-top: 20px;
+    }
+
+    .person-info img {
+      width: 200px;
+      height: 250px;
+      margin-bottom: 10px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+
+<body style="background-color: #D4C2AD; color: white;">
+  <!--header-->
+  <nav class="navbar navbar-expand-lg" style="background-color: #66796B; ">
+    <div class="container-fluid">
+      <a class="navbar-brand" style=" color: #EFDFCC; font-size: 2rem; font-weight: bold; "
+        href="index.html">ArtScape</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" href="index.html" style=" color: #EFDFCC; ">Home</a>
+          <a class="nav-link" href="gallery.html" style=" color: #EFDFCC; ">Gallery</a>
+          <a class="nav-link" href="artists.html" style=" color: #EFDFCC; ">Artists</a>
+          <a class="nav-link active" aria-current="page" href="aboutUs.html"
+            style=" color: #FFFFFF; font-weight: bold">About Us</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="container mt-4">
+    <h1 class="text-center">About Us</h1>
+    <div class="row mt-4">
+      <div class="col-md-12 text-center">
+        <p style="font-size: 1.5rem;">We are a virtual art gallery, serving as a platform in the digital world that
+          hosts a vast collection of
+          artworks. This digital gallery provides a space for artists to showcase their creativity by featuring pieces
+          from various realms of art, offering viewers the opportunity to explore different perspectives. We curate a
+          diverse range of artworks, including vibrant paintings, striking sculptures, and pieces that push the
+          boundaries of digital art. We invite art enthusiasts on an engaging journey, encouraging them to discover the
+          stories behind each artwork and appreciate the beauty of art. Our collection reflects the universality of art
+          and the diversity of artists from various cultures, providing viewers with a broad perspective. Our virtual
+          gallery acts as a meeting point, bringing together art enthusiasts to experience thought-provoking,
+          emotionally resonant art that challenges boundaries.</p>
+      </div>
+    </div>
+  </div>
+  <!-- first person-->
+  <div class="row mt-4 person-info">
+    <div class="col-md-4 offset-md-2 text-center">
+      <img src="../ArtScape/img/aboutUs/ayca_aydin.png" alt="Ayça Aydın" class="img-fluid rounded-circle mb-3">
+      <p style="color: #8C644D; font-size: 1.7rem;" >Ayça Aydın</p>
+      <p>I am a 3rd-year Computer Engineering student at Doğuş University. Throughout my university life, I have
+        actively participated in the IEEE club. Currently, I provide coding education to children and receive training
+        in game and application development at an academy. With my passion for technology and experiences, I aim to play
+        an effective role in the future.</p>
+      <p><a style="color: #66796B" href="mailto:aycaaydiin@outlook.com" target="_blank">Email</a> |
+        <a style="color: #66796B" href="https://www.linkedin.com/in/aycaaydin/" target="_blank">LinkedIn</a>
+      </p>
+    </div>
+
+    <!-- second person-->
+    <div class="col-md-4 text-center">
+      <img src="../ArtScape/img/aboutUs/batuhan_eyuboglu.jpeg" alt="Batuhan Eyüboğlu" class="img-fluid rounded-circle mb-3">
+      <p style="color: #8C644D; font-size: 1.7rem;">Batuhan Eyüboğlu</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam massa lorem, fringilla vel neque quis, rutrum sollicitudin mi. Proin efficitur iaculis sem, id egestas libero mollis ac. Nam in ullamcorper erat. Phasellus ut vulputate est. Cras fringilla semper euismod. Etiam risus est, condimentum sed lacinia nec, ornare ut sem. 
+      </p>
+      <p><a style="color: #66796B" href="mailto:batuhan.eyuboglu@outlook.com" target="_blank">Email</a> |
+        <a style="color: #66796B" href="https://www.linkedin.com/in/batuhan-eyuboglu/" target="_blank">LinkedIn</a>
+      </p>
+    </div>
+  </div>
+  </div>
+
+  <footer class="container-fluid">
+    <p>The images used are taken from
+      <a href="https://www.sanatgezgini.com/" target="_blank"
+        style="color: white; text-decoration: underline;">sanatgezgini.com</a>. We thank them for this comprehensive
+      resource.
+    </p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="icon" type="Image/x-icon" href="../ArtScape/img/favicon.ico">
+  <title>ArtScape</title>
+  <style>
+     /* Index style sheet*/
+    .background-image {
+      background: url('https://assets-global.website-files.com/5c0a715b09ba6f668d586b2e/622cf52efdfd91dc1c70df76_Azul_Ikonospace.jpg') center/cover no-repeat;
+      padding: 150px;
+    }
+
+    .image-title {
+      font-size: 5rem;
+      font-weight: bold;
+      margin-top: 20px;
+      color: black;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .image-description {
+      font-size: 1.5rem;
+      margin-top: 20px;
+      color: black;
+      font-family: 'Times New Roman', serif;
+    }
+
+    input.form-control {
+      height: 40px;
+      max-width: 30%;
+      margin: auto;
+      align-items: center;
+    }
+
+    .container-custom {
+      text-align: center;
+
+    }
+
+    h1 {
+      color: #8C644D;
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    h2 {
+      color: #66796B;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    h4 {
+      color: #66796B;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    button {
+      background-color: #66796B;
+      color: #EFDFCC;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-bottom: 30px;
+    }
+
+    footer {
+      background-color: #66796B;
+      color: white;
+      text-align: center;
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: 50px;
+      padding-top: 40px;
+      padding-bottom: 30px;
+    }
+  </style>
+</head>
+
+<body style="background-color: #D4C2AD; color: white;">
+  <!--header-->
+  <nav class="navbar navbar-expand-lg" style="background-color: #66796B; ">
+    <div class="container-fluid">
+      <a class="navbar-brand" style=" color: #EFDFCC; font-size: 2rem; font-weight: bold;"
+        href="index.html">ArtScape</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="index.html"
+            style=" color: #FFFFFF; font-weight: bold">Home</a>
+          <a class="nav-link" href="gallery.html" style=" color: #EFDFCC; ">Gallery</a>
+          <a class="nav-link" href="artists.html" style=" color: #EFDFCC; ">Artists</a>
+          <a class="nav-link" href="aboutUs.html" style=" color: #EFDFCC; ">About Us</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Home Page Content -->
+  <div class="container-custom" style="text-align: center;">
+    <div class="background-image">
+      <h1 class="image-title" style="font-size: 5rem; font-weight: bold; margin-top: 20px; color: #FFF8F3;">Art Scape</h1>
+    </div>
+        <h1>Explore the World of Art!</h1>
+        <p class="image-description" style="color: #FFF8F3;">
+          Get ready to embark on a journey of discovery!
+        </p>
+        <p class="image-description" style="color: #FFF8F3;">
+          In our digital art gallery, you'll encounter works from various art disciplines.
+        </p>
+        <p class="image-description" style="color: #FFF8F3;">
+          Each canvas tells a story, and every sculpture reflects the artist's emotions.
+        </p>
+        <p class="image-description" style="color: #FFF8F3;">
+          Welcome to the enchanting world of art!
+        </p>
+      <hr>
+      <img src="https://guzelsanatlar.ktb.gov.tr/images/kapak.png" alt="Art Scape Cover Image"
+        style="width: 100%; max-width: 800px; margin-top: 20px;">
+      <h4 style="margin-top: 30px; margin-bottom: 30px">Explore more in-person at local art galleries and exhibitions.
+      </h4>
+      <a href="https://guzelsanatlar.ktb.gov.tr/TR-3124/guzel-sanatlar-galerileri.html" target="_blank"
+        style="color: white">Discover upcoming events near you!</a>
+
+  </div>
+
+  <hr>
+  <!-- Contact Form -->
+  <div class="container-custom" style="text-align: center;">
+    <h2 style="color:#66796B; font-size: 2,5rem; font-weight: bold; margin-top: 30px;">Contact Us</h2>
+    <form>
+      <div class="form-group">
+        <label for="firstName" style="color: #66796B">First Name</label>
+        <input type="text" class="form-control" id="firstName" placeholder="Enter your first name">
+      </div>
+      <div class="form-group">
+        <label for="lastName" style="color: #66796B">Last Name</label>
+        <input type="text" class="form-control" id="lastName" placeholder="Enter your last name">
+      </div>
+      <div class="form-group">
+        <label for="email" style="color: #66796B">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your informations with anyone else.</small>
+      </div>
+      <button type="button" class="button">Submit</button>
+    </form>
+  </div>
+  <footer class="container-fluid">
+    <p>The images used are taken from
+      <a href="https://www.sanatgezgini.com/" target="_blank"
+        style="color: white; text-decoration: underline;">sanatgezgini.com</a>. We thank them for this comprehensive
+      resource.
+    </p>
+  </footer>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
