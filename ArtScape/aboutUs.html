@@ -49,6 +49,29 @@
       margin-bottom: 10px;
       margin-top: 50px;
     }
+    .stars-container {
+      display: flex;
+      font-size: 2rem;
+      cursor: pointer;
+      justify-content: center; /* Yıldızları ve kutuyu ortalamak için eklenen stil */
+    }
+
+    .star {
+      margin-right: 10px;
+      color: #8C644D;
+    }
+
+    .star.active,
+    .star:hover {
+      color: #FFD700;
+    }
+
+    .vote-box {
+      text-align: center;
+      margin: 0 auto; 
+      max-width: 500px; 
+      padding: 20px;
+    }
   </style>
 </head>
 
@@ -110,7 +133,30 @@
       </p>
     </div>
   </div>
+
+  <hr>
+
+    <!-- Rating Part -->
+  <div class="container mt-4">
+    <h2 class="text-center" style="color: #FFF8F3;">Vote Us!</h2>
+    <div class="stars-container">
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+    </div>
+
+    <!-- feedback box -->
+    <div class="vote-box mt-3">
+      <label for="feedback" style="color: #8C644D; font-size: 1.5rem;">Would you like to provide feedback</label>
+      <textarea class="form-control" id="feedback" rows="4" placeholder="Write here what you want to let us know..."></textarea>
+    </div>
+    <div class="text-center"> 
+      <button class="btn btn-primary" style="background-color:#66796B;" ;>Submit</button>
+    </div>
   </div>
+
 
   <footer class="container-fluid">
     <p>The images used are taken from
@@ -123,6 +169,31 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const starsContainer = document.querySelector('.stars-container');
+    const stars = document.querySelectorAll('.star');
+  
+    starsContainer.addEventListener('click', function (event) {
+      const clickedStar = event.target;
+  
+      if (clickedStar.classList.contains('star')) {
+        const clickedIndex = Array.from(stars).indexOf(clickedStar);
+  
+        stars.forEach((star, index) => {
+          if (index <= clickedIndex) {
+            star.classList.add('active');
+          } else {
+            star.classList.remove('active');
+          }
+        });
+      }
+    });
+  });
+</script>
+
 </body>
 
 </html>
