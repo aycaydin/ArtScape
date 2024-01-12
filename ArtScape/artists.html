@@ -46,6 +46,10 @@
     <div class="container-fluid">
       <a class="navbar-brand" style=" color: #EFDFCC; font-size: 2rem; font-weight: bold; "
         href="index.html">ArtScape</a>
+        <span style="margin-right: 20px;">
+          <img src="weather/64x64/day/113.png" id="weatherIcon">
+          <span id="tempC" style=" color: #EFDFCC; font-size: 2rem; font-weight: bold;   vertical-align: middle; ">0</span>
+        </span>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -131,6 +135,30 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    // Define the API URL
+  const apiUrl = ' http://api.weatherapi.com/v1/current.json?key=3bf6f4cb6652422a90771925241101&q=Istanbul';
+  
+  // Make a GET request
+  fetch(apiUrl)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.json();
+    })
+    .then(data => {
+      var url = data.current.condition.icon;
+      var parts = url.split("/");
+      var result = parts.slice(3).join("/");
+
+      document.getElementById("weatherIcon").src = result;
+      document.getElementById("tempC").textContent = data.current.temp_c;
+    })
+    .catch(error => {
+      console.error('Error:', error);
+    });
+  </script>
 </body>
 
 </html>
